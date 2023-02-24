@@ -1,7 +1,7 @@
 import React from "react";
 import { ArchiveSwitch } from "../Archieve/Archive";
 
-const Header = ({ setSeeArchive, seeArchive }) => {
+const Header = ({ activities, setSeeArchive, seeArchive }) => {
   return (
     <header>
       <svg
@@ -41,7 +41,7 @@ const Header = ({ setSeeArchive, seeArchive }) => {
           />
         </g>
       </svg>
-      <ArchiveSwitch setSeeArchive={setSeeArchive} seeArchive={seeArchive} />
+      <ArchiveSwitch activities={activities} setSeeArchive={setSeeArchive} seeArchive={seeArchive} />
     </header>
   );
 };

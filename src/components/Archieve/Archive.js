@@ -6,7 +6,13 @@ import {
 import { CallBox, ArchiveOrUndo } from "../Activities/Activities";
 import { ThreeDotVertStyle } from "../Archieve/ArchiveStyles";
 
-const ArchiveSwitch = ({ setSeeArchive, seeArchive }) => {
+const ArchiveSwitch = ({ activities, setSeeArchive, seeArchive }) => {
+  const realActivities = (activities && activities.length > 0) ? 
+                        activities.filter((val) => val.via && val.to && val.from && val.to !== val.from && val.is_archived == false).length : 
+                        0;
+  const realArchives = (activities && activities.length > 0) ? 
+  activities.filter((val) => val.via && val.to && val.from && val.to !== val.from && val.is_archived == true).length : 
+  0;
   return (
     <>
       <ArchiveSwitchStyle seeArchive={seeArchive}>
@@ -15,14 +21,14 @@ const ArchiveSwitch = ({ setSeeArchive, seeArchive }) => {
           seeArchive={seeArchive}
           onClick={() => setSeeArchive(false)}
         >
-          Activity
+          Activity: {realActivities}
         </ActivitySwitchBtn>
         <ThreeDotVertStyle />
         <ArchiveSwitchBtn
           seeArchive={seeArchive}
           onClick={() => setSeeArchive(true)}
         >
-          Archives
+          Archives: {realArchives}
         </ArchiveSwitchBtn>
       </ArchiveSwitchStyle>
     </>
