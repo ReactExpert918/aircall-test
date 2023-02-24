@@ -105,7 +105,6 @@ const CallBox = ({
 
     fetch(`https://charming-bat-singlet.cyclic.app/https://cerulean-marlin-wig.cyclic.app/activities/${id}`, requestOptions)
       .then((response) => {
-        response.json()
         setUpdated()
       })
       .catch((err) => console.log(err));
@@ -161,7 +160,6 @@ const ArchiveOrUndo = ({
           requestOptions
         )
           .then((response) => {
-            response.json();
             if(callIndex == realActicities.length - 1) {
               setUpdated();
             }
@@ -186,7 +184,6 @@ const ArchiveOrUndo = ({
       requestOptions
     )
       .then((response) => {
-        response.json();
         setUpdated();
       })
       .catch((err) => console.log(err));

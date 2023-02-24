@@ -19,16 +19,13 @@ let CallBoxStyle = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
-
   .swipeable-list-item__content {
     margin-bottom: 10px;
   }
-
   .swipeable-list-item {
     display: flex;
     align-items: center;
   }
-
   .swipeable-list-item__trailing-actions {
     height: 52.4px;
     margin-top: 1.73px;
@@ -42,7 +39,6 @@ let CallDateStyle = styled.div`
   position: relative;
   letter-spacing: 2px;
   margin-bottom: 10px;
-
   &:before {
     content: "";
     width: 190%;
@@ -51,7 +47,6 @@ let CallDateStyle = styled.div`
     bottom: 3px;
     left: -180px;
   }
-
   &:after {
     content: "";
     width: 190%;
@@ -77,7 +72,6 @@ let CallDetailStyle = styled.div`
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
-
   &:hover {
     box-shadow: 1px 2px 5px #d5d5d5, -1px -2px 5px #ffffff;
   }
@@ -93,12 +87,10 @@ let CallFromStyle = styled.div`
   font-size: 14px;
   white-space: nowrap;
   overflow-y: hidden;
-
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
   }
-
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -134,7 +126,6 @@ let CallTimeStyle = styled.div`
   font-weight: 700;
   color: darkgray;
   font-size: 12px;
-
   #ampm {
     border: 1px solid lightgrey;
     padding: 3px 5px;
@@ -143,7 +134,6 @@ let CallTimeStyle = styled.div`
     border-bottom-left-radius: 3px;
     font-size: 10px;
   }
-
   #time {
     display: flex;
     padding-right: 4px;
@@ -169,7 +159,6 @@ let ArchiveSwipeStyle = styled.div`
   box-sizing: border-box;
   align-items: center;
   padding: 8px;
-
   color: rgb(238, 238, 238);
   user-select: none;
   border-radius: 10px;
