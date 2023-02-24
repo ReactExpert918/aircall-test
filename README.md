@@ -1,5 +1,6 @@
 ## Speer Technologies AirCall App Assessment
 
-An application that serves to replicate basic archiving functions of a typical smart phone call log. Additional features include retrieving a list of calls and parsing the information to be properly represented.
+Live site is https://main--zesty-kheer-8615fe.netlify.app/
+
 
 
